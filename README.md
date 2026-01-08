@@ -31,7 +31,7 @@ Sync your Habitica tasks with your Obsidian vault! This plugin lets you view, sc
   Choose where the `habitica-sync.md` file is saved in your vault.
 
 - **Machine binding:**  
-  Restrict sync to a specific device using a hashed machine ID. Useful for multi-device setups.
+  Restrict sync to mobile, desktop, or both. Useful for multi-device setups.  Obsidian has no way to reliably distiguish between mobile devices.
 
 - **Platform-aware auto-sync:**  
   Choose whether auto-sync runs on desktop, mobile, or both.
@@ -65,13 +65,13 @@ Sync your Habitica tasks with your Obsidian vault! This plugin lets you view, sc
 | **API User**                  | Your Habitica API User ID.                                                                   |
 | **API Token**                 | Your Habitica API Token (stored in plain text; do not share your vault).                     |
 | **Group ID**                  | Your Habitica Group ID (Party or Guild).                                                     |
-| **Output Folder**             | Folder where `habitica-fullsync.md` will be saved (leave blank for vault root).                  |
+| **Output Folder**             | Folder where `habitica-fullsync.md` will be saved (leave blank for vault root).              |
 | **Automatic Sync**            | Enable automatic sync on load and every X minutes.                                           |
 | **Sync Interval (minutes)**   | How often to run auto-sync when enabled.                                                     |
 | **Auto Sync Platform**        | Choose which devices should run auto sync (desktop, mobile, or both).                        |
 | **Disable Scoring**           | Enable this to prevent scoring tasks in Habitica (read-only sync).                           |
 | **Disable Creating New Tasks**| Enable this to prevent creating new tasks in Habitica (only scores existing tasks).          |
-| **Machine Binding**           | Bind sync to this machine only (see machine ID in settings).                                 |
+| **Machine Binding**           | Bind sync to mobile, desktop or both.                                                        |
 
 ---
 
@@ -92,7 +92,7 @@ Sync your Habitica tasks with your Obsidian vault! This plugin lets you view, sc
   Enable “Disable Creating New Tasks” to prevent new Habitica tasks from being created for completed vault tasks.
 
 - **Machine Binding:**  
-  Bind sync to your current device to prevent other devices from syncing your Habitica tasks.
+  Bind sync to your mobile, desktop, or both to prevent other devices from automatically syncing your Habitica tasks.
 
 ---
 
@@ -139,7 +139,7 @@ _No tasks found._
   Your Habitica API token is stored in plain text in your vault. Do not share your vault with others.
 
 - **Machine Binding:**  
-  Machine binding uses a locally generated UUID to restrict sync to a specific device.
+  Machine binding currently allows you to specify desktop, mobile, or both for automatic syncing.  Eventually, I'd like to find a way to restrict sync to a specific device.
 
 ---
 
