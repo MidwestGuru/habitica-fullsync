@@ -362,8 +362,7 @@ class HabiticaSyncSettingTab extends require('obsidian').PluginSettingTab {
     const { containerEl } = this;
     containerEl.empty();
 
-    containerEl.createEl('h2', { text: 'Habitica Sync Settings' });
-
+    
     new Setting(containerEl)
       .setName('API User')
       .setDesc('Your Habitica API User ID')
@@ -398,7 +397,7 @@ class HabiticaSyncSettingTab extends require('obsidian').PluginSettingTab {
         }));
 
     new Setting(containerEl)
-      .setName('Output Folder')
+      .setName('Output folder')
       .setDesc('Folder where habitica-fullsync.md will be saved (leave blank for vault root)')
       .addText(text => text
         .setPlaceholder('e.g., Habitica')
@@ -409,7 +408,7 @@ class HabiticaSyncSettingTab extends require('obsidian').PluginSettingTab {
         }));
 
     new Setting(containerEl)
-      .setName('Automatic Sync')
+      .setName('Automatic sync')
       .setDesc('Enable automatic sync on load and every X minutes')
       .addToggle(toggle => toggle
         .setValue(this.plugin.settings.autoSync)
@@ -419,7 +418,7 @@ class HabiticaSyncSettingTab extends require('obsidian').PluginSettingTab {
         }));
 
     new Setting(containerEl)
-      .setName('Auto Sync Platform')
+      .setName('Auto sync platform')
       .setDesc('Choose which devices should run auto sync')
       .addDropdown(dropdown => {
         dropdown
@@ -434,7 +433,7 @@ class HabiticaSyncSettingTab extends require('obsidian').PluginSettingTab {
       });
 
     new Setting(containerEl)
-      .setName('Sync Interval (minutes)')
+      .setName('Sync interval (minutes)')
       .setDesc('How often to run auto-sync when enabled')
       .addText(text => text
         .setPlaceholder('e.g., 30')
@@ -448,7 +447,7 @@ class HabiticaSyncSettingTab extends require('obsidian').PluginSettingTab {
         }));
 
     new Setting(containerEl)
-      .setName('Disable Scoring')
+      .setName('Disable scoring')
       .setDesc('Enable this to prevent scoring tasks in Habitica (read-only sync)')
       .addToggle(toggle => toggle
         .setValue(this.plugin.settings.disableScoring)
@@ -458,7 +457,7 @@ class HabiticaSyncSettingTab extends require('obsidian').PluginSettingTab {
         }));
 
     new Setting(containerEl)
-      .setName('Disable Creating New Tasks')
+      .setName('Disable creating new tasks')
       .setDesc('Enable this to prevent creating new tasks in Habitica from non-habitica tasks completed in Obsidian')
       .addToggle(toggle => toggle
         .setValue(this.plugin.settings.disableCreating)

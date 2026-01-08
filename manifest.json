@@ -5,7 +5,6 @@
   "version": "1.8.0",
   "minAppVersion": "0.15.0",
   "author": "MidwestGuru",
-  "description": "Sync Habitica tasks into Obsidian, score completed tasks, support group tasks, folder selection, optional automatic sync with configurable interval, restrict sync to a specific device using machine binding, and new options to disable scoring or creating tasks.",
-  "isDesktopOnly": false,
-  "main": "main.js"
+  "description": "Sync Habitica tasks, score completed tasks, support group tasks, folder selection, automatic sync, device binding, and advanced options.",
+  "isDesktopOnly": false
 }
