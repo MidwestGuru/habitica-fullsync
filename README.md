@@ -1,4 +1,4 @@
-# Habitica Fyll Sync Plugin for Obsidian
+# Habitica Full Sync Plugin for Obsidian
 
 Sync your Habitica tasks with your Obsidian vault! This plugin lets you view, score, and manage Habitica tasks directly from Obsidian, with advanced options for automation, device binding, and granular control over sync behavior.
 
